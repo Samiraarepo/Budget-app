@@ -60,7 +60,7 @@ addExpense.addEventListener("click", function () {
   let expense = {
     type: "expense",
     title: expenseTitle.value,
-    amount: expenseAmount.value,
+    amount: +expenseAmount.value,
   };
   ENTRY_LIST.push(expense);
 
@@ -76,7 +76,7 @@ addIncome.addEventListener("click", function () {
   let income = {
     type: "income",
     title: incomeTitle.value,
-    amount: incomeAmount.value,
+    amount: +incomeAmount.value,
   };
   ENTRY_LIST.push(income);
 
@@ -88,13 +88,17 @@ addIncome.addEventListener("click", function () {
 
 function updateUI() {
   income = calculateTotal("income", ENTRY_LIST);
-  outcome = calculateTotal("outcome", ENTRY_LIST);
-  balance = calculateBalance(income, outcome);
-
-  //UPDATE UI
-  clearElement([expenseList, incomeList, allList]);
+  outcome = calculateTotal("expense", ENTRY_LIST);
+  balance = Math.abs(calculateBalance(income, outcome));
 
   let sign = income >= outcome ? "$" : "-$";
+
+  //UPDATE UI
+  balanceEl.innerHTML = `<small>${sign}</small>${balance}`;
+  outcomeTotalEl.innerHTML = `<small>$</small>${outcome}`;
+  incomeTotalEl.innerHTML = `<small>$</small>${income}`;
+
+  clearElement([expenseList, incomeList, allList]);
 
   ENTRY_LIST.forEach((entry, index) => {
     if (entry.type == "expense") {
