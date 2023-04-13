@@ -32,13 +32,13 @@
       <div class="budget-dashboard">
         <div class="dash-title">Dashboard</div>
         <div class="toggle">
-          <div class="expense-list">Expenses</div>
-          <div class="income-list">Income</div>
-          <div class="all-list active">All</div>
+          <div class="first-tab">Expenses</div>
+          <div class="second-tab">Income</div>
+          <div class="third-tab active">All</div>
         </div>
         <div class="hide" id="expense">
           <ul class="list"></ul>
-          <div class="inputs">
+          <div class="input">
             <input
               type="text"
               id="expense-title-input"
@@ -56,7 +56,7 @@
         </div>
         <div class="hide" id="income">
           <ul class="list"></ul>
-          <div class="inputs">
+          <div class="input">
             <input
               type="text"
               id="income-title-input"
@@ -72,7 +72,9 @@
             <div class="add-income"><img src="icon/plus.png" alt="+" /></div>
           </div>
         </div>
-        <div id="all"></div>
+        <div id="all">
+          <ul class="list"></ul>
+        </div>
       </div>
     </div>
     <script src="./chart.js"></script>
