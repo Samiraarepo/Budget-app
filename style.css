@@ -42,7 +42,7 @@ input[type="number"] {
 .budget-container {
   position: absolute;
   width: 360px;
-  height: 780px;
+  height: 100vh;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -50,7 +50,7 @@ input[type="number"] {
 }
 
 .budget-container .app-title {
-  margin-top: 75px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 
@@ -121,7 +121,7 @@ input[type="number"] {
 .budget-dashboard {
   display: block;
   width: 360px;
-  height: 470px;
+  /* height: 470px; */
   background-color: #fff;
   margin-top: 35px;
   border-radius: 30px 30px 0 0;
@@ -177,12 +177,12 @@ input[type="number"] {
 /* ////////// ALL ///////////// */
 .budget-dashboard #all {
   width: 360px;
-  height: 339px;
+  height: auto;
   position: relative;
 }
 .budget-dashboard #all ul {
   width: 360px;
-  height: 285px;
+  height: 270px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -234,7 +234,7 @@ input[type="number"] {
 /* //////// EXPENSE ////////// */
 .budget-dashboard #expense {
   width: 360px;
-  height: 339px;
+  height: auto;
   position: relative;
 }
 
@@ -386,7 +386,7 @@ input[type="number"] {
 
 .budget-dashboard #income ul {
   width: 360px;
-  height: 285px;
+  height: auto;
   list-style: none;
   margin: 0;
   padding: 0;
