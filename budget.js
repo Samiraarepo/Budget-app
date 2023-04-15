@@ -87,7 +87,39 @@ addIncome.addEventListener("click", function () {
   clearInput([incomeTitle, incomeAmount]);
 });
 
-//HELEPER FUNCS
+incomeList.addEventListener("click", deleteOrEdit);
+expenseList.addEventListener("click", deleteOrEdit);
+allList.addEventListener("click", deleteOrEdit);
+
+// HELEPER FUNCS
+function deleteOrEdit(event) {
+  const targetBtn = event.target;
+  const entry = targetBtn.parentNode;
+
+  if (targetBtn.id == EDIT) {
+    editEntry(entry);
+  } else if (targetBtn.id == DELETE) {
+    deleteEntry(entry);
+  }
+}
+
+function deleteEntry(entry) {
+  ENTRY_LIST.splice(entry.id, 1);
+  updateUI();
+}
+
+function editEntry(entry) {
+  const ENTRY = ENTRY_LIST[entry.id];
+
+  if (ENTRY.type == "income") {
+    incomeTitle.value = ENTRY.title;
+    incomeAmount.value = ENTRY.amount;
+  } else if (ENTRY.type == "expense") {
+    expenseTitle.value = ENTRY.title;
+    expenseAmount.value = ENTRY.amount;
+  }
+  deleteEntry(entry);
+}
 
 function updateUI() {
   income = calculateTotal("income", ENTRY_LIST);
