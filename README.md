@@ -11,3 +11,8 @@ Our app has a chart, so the user can easily compare the income and outcome.
 The user's income and expense entry list is stored in the local storage, so when he refreshes the page, or reboot his machine, he can always find his data there.
 
 When you open the folder, you'll find all the files needed to get started, the CSS code is already typed (see style.css file), as we're not going to talk about CSS in our tutorial. we're going just to talk about HTML and JavaScript.
+The user's income and expense entry list is stored in the local storage, so when he refreshes the page, or reboot his machine, he can always find his data there.
+
+**Online Demo of Project :**
+
+<a href="https://aaramiss.github.io/Budget-app/" title="Budget-App">Link to Budget App</a>
