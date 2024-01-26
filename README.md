@@ -6,7 +6,7 @@ Welcome to the Budget App! This project is the result of following a comprehensi
 You can check out the live demo of the Budget App here.
 **Online Demo of Project :**
 
-<a href="https://aaramiss.github.io/Budget-app/" title="Budget-App">Link to Budget App</a>
+<a href="https://samiraatech.github.io/Budget-app/" title="Budget-App">Link to Budget App</a>
 
 ## Features
 
