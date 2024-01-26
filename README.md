@@ -37,7 +37,7 @@ The Budget App was built using the following technologies and tools:
 - JavaScript
 
 ## Credits
-The Budget App tutorial was created by [aaramiss](https://aaramiss.github.io/Budget-app/).
+The Budget App tutorial was created by [aaramiss](https://samiraatech.github.io/Budget-app/).
 
 ## License
 The Budget App is released under the MIT License. You are free to use, modify, and distribute this project for personal and commercial purposes.
